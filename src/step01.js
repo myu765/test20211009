@@ -10,9 +10,6 @@ const markdown = `
 L∥＿∥ (^ω^)
 |￣＼三⊂/￣￣/
 |　 ｜( /　　/
-
-どうしてこうなった
-　どうしてこうなった
 ~~~
 `
 const components = {

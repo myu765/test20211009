@@ -72,26 +72,26 @@ function App() {
               <StepContent>
                 {index === activeStep && (getStepContent(activeStep))}
                 <React.Fragment>
+                {index === activeStep && (
                   <Box sx={{ mb: 0 }}>
-                    <div>
-                      <Button
-                        variant="contained"
-                        size="small"
-                        onClick={handleNext}
-                        sx={{ mt: 1, mr: 1 }}
-                      >
-                        {activeStep === steps.length - 1 ? '終了' : '次へ'}
-                      </Button>
-                      <Button
-                        disabled={activeStep === 0}
-                        onClick={handleBack}
-                        size="small"
-                        sx={{ mt: 1, mr: 1 }}
-                      >
-                        戻る
-                      </Button>
-                    </div>
+                    <Button
+                      variant="contained"
+                      size="small"
+                      onClick={handleNext}
+                      sx={{ mt: 1, mr: 1 }}
+                    >
+                      {activeStep === steps.length - 1 ? '終了' : '次へ'}
+                    </Button>
+                    <Button
+                      disabled={activeStep === 0}
+                      onClick={handleBack}
+                      size="small"
+                      sx={{ mt: 1, mr: 1 }}
+                    >
+                      戻る
+                    </Button>
                   </Box>
+                  )}
                 </React.Fragment>
               </StepContent>
             </Step>
